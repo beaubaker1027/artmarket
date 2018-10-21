@@ -2,3 +2,4 @@
 /routes/depricated/
 private/config.js
 models/portfolioObjectModel.js
+uploads/

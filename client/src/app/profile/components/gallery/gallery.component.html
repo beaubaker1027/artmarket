@@ -1,0 +1,7 @@
+<div id='galleryContainer' *ngIf='user' >
+  <a class='editButton' *ngIf='isOwnProfile' routerLink = '/user/upload'>Add Artwork</a>
+  <div class='imgWrapper' *ngFor='let art of user.artwork'>
+    <img class='art' id='{{art.upload.name}}' src= 'data:{{art.upload.mimetype}};base64,{{art.upload.base64}}'>
+    <h3>{{art.upload.name}}</h3>
+  </div>
+</div>

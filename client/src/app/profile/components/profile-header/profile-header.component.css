@@ -1,0 +1,15 @@
+/*global*/
+* { margin: 0; padding: 0; }
+h1 { text-align: left; }
+li { list-style-type: none; margin: 0; padding: 0; }
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+div { }
+flash-messages { text-align: center; }
+
+.userInfoHeader { border-bottom: 1px solid lightGray; padding: 0 30px 45px 30px; margin-bottom: 50px; }
+.userInfoHeader img { display: inline-block; height: 150px; width: 150px; }
+.userInfoHeader div { position: relative; display: inline-block; margin-left: 15px; }
+.userInfoHeader div ul { margin: 0; padding: 0; }
+.userInfoHeader div .editButton { display: none; position: absolute; right: 5px; top: 5px; padding: 2px 5px; background-color: darkGray; border-radius: 10px; }
+.userInfoHeader div:hover .editButton { display: block; }

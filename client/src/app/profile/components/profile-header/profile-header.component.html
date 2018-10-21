@@ -1,0 +1,13 @@
+<flash-messages></flash-messages>
+<div class='userInfoHeader'>
+  <img *ngIf='profilePic' src={{profilePic}} height='200px' width='200px'>
+  <div>
+    <h1 *ngIf='user'> {{user.username}} </h1>
+    <ul>
+      <li *ngIf='user'>{{user.name}}</li>
+      <li *ngIf='user'>contact - {{user.email}}</li>
+      <a *ngIf='isOwnProfile()' class='editButton' routerLink = '/user/edit'>Edit</a>
+    </ul>
+  </div>
+</div>
+<app-gallery *ngIf='user' [user] = 'user' [isOwnProfile] ='isOwnProfile()'></app-gallery>

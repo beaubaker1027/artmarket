@@ -1,0 +1,29 @@
+nav { background: #e6e6e6; width: 100%; margin: 0; padding: 0;}
+app-user-dropdown { display: none; }
+a { line-height: 40px; display: inline-block; margin: 0 15px 0 15px; padding: 15px 0; text-decoration: none; color: #333333; }
+a:hover { color: #666666; }
+.logo { font-size: 40px; margin: 0 0 0 15px; font-weight: bold;}
+.right { margin: 0 15px 0 0; float: right; }
+.middle { display: block; margin: 0 auto; }
+#dropdown { position: relative; }
+#dropdown:hover app-user-dropdown { display: block; }
+
+
+form { line-height: 40px; }
+form input { width: 100px; height: 17px; float: left; transition: width 0.5s; }
+form input:focus { width: 200px; }
+form input:not(:focus) { width: 100px; }
+form button { height: 23px; float: right; }
+
+@media only screen and (max-width: 1200px){
+  a { margin: 0 30px 0 30px; }
+  .right { margin: 0 30px 0 0; }
+}
+
+@media only screen and (max-width: 800px){
+  a { margin: 0 10px 0 0; }
+  .right { margin: 0 10px 0 0; }
+  #dropdown { margin: 0 30px 0 0; }
+}
+
+i { position: relative; padding: 0 10px;}

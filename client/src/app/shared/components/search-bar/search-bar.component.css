@@ -1,0 +1,15 @@
+div { position: relative; width: calc(100% - 20px); text-align: right; margin: 0; padding: 5px 10px; }
+a { display: inline-block; text-decoration: none; color: #333333; }
+a:visited { }
+ul { position: absolute; transition: width 0.5s linear 0.5s; width: calc(78px - 10px); list-style-type: none; text-align: left; margin: 0; padding: 0 5px; background-color: white; }
+ul li { text-align: left; border-bottom: 1px solid black; }
+ul li a { display: block; text-align: left; line-height: 20px; }
+
+
+input { width: 78px; transition: width 0.5s linear 0.5s; }
+input:focus { transition-delay: 0s; width: 200px; }
+input:focus + ul { transition-delay: 0s; width: calc(200px - 10px); display: block; }
+
+@media only screen and (max-width: 600px){
+  form input { width: 200px; }
+}

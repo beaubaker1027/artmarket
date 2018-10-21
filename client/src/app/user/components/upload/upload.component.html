@@ -1,0 +1,20 @@
+<app-nav></app-nav>
+<div class='wrapper'>
+  <div class='data-form'>
+    <div class='uploadedPicture'>
+      <img *ngIf='fileToUpload' src={{fileToUpload}}>
+    </div>
+    <div class='fileList'>
+      <label class='fileName' *ngIf='file'>{{file.name}}</label>
+    </div>
+    <ul>
+      <flash-messages></flash-messages>
+      <form (submit)="onUploadSubmit()" enctype="multipart/form-data">
+        <li><label class='formField' id='file'><label class='fileInput' for='fileUpload'>Select File</label><input type='file' id='fileUpload' #item (change)= 'onChange(item.files)' name="upload"></label></li>
+        <li><label class='formField'><textarea [(ngModel)]='description' name="description" rows="5" cols="30"></textarea></label></li>
+        <li><label class='formField'><input type='number'[(ngModel)]='price' name="price"></label></li>
+        <li><label class='formField'><input type="submit" value="Upload"></label></li>
+      </form>
+    </ul>
+  </div>
+</div>

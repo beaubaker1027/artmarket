@@ -1,0 +1,9 @@
+ul { z-index: 2; position: absolute; top: 34px; right: -25px; margin: 10px; padding: 20px 0 0 0; width: 125px; background-color: white; }
+ul li { padding: 10px; margin: 0; list-style-type: none; text-align: right; border-bottom: 1px solid black; }
+a { color: #333333; text-decoration: none; }
+ul { padding: 0; background-color: white; }
+div:hover ul li { display: block; }
+
+@media only screen and (max-width: 1200px){
+  ul { right: -40px; }
+}

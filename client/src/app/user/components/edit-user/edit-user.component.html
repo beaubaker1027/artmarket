@@ -1,0 +1,23 @@
+<app-nav></app-nav>
+<div class='form-wrapper'>
+  <div class='data-form'>
+    <div class='greeting'>
+      <h1>Welcome {{currentUsername}}</h1>
+      <h2>Update Your Account</h2>
+    </div>
+    <ul>
+      <flash-messages></flash-messages>
+      <form (submit)="onUpdateSubmit()" enctype="multipart/form-data">
+        <li><label>Profile Picture: </label><label class='formField' id='file'><input type='file' #item (change)= 'onChange(item.files)' name="profilePic"></label></li>
+        <li><label>Username: </label><input class='formField' type='text' [(ngModel)]="username" name="username" placeholder="{{currentUser}}" autocomplete="off" autocorrect="off" spellcheck="false" required></li>
+        <li><label>Email: </label><input class='formField' type='email' [(ngModel)]="email" name="email" placeholder={{currentEmail}} autocomplete="off" autocorrect="off" spellcheck="false" required></li>
+        <li><label>Full Name: </label><input class='formField' type='text' [(ngModel)]="fullname" name="fullname" placeholder="{{currentName}}" autocomplete="off" autocorrect="off" spellcheck="false"></li>
+        <li><label>Gender: </label><input class='formField' type='text' [(ngModel)]="gender" name="gender" placeholder="{{gender}}" autocomplete="off" autocorrect="off" spellcheck="false"></li>
+        <li><label>Account Type: </label><label class='formField' id='radio'><input type='radio' [(ngModel)]="accountType" name='accountType' value='Seller'><label>Seller</label><input required type='radio' [(ngModel)]="accountType" name='accountType' name='accountType' value='Buyer'><label>Buyer</label></label></li>
+        <li><label>Password: </label><input class='formField' type='password' [(ngModel)]="password" name="password" required></li>
+        <li><input type="submit" value="Update"></li>
+      </form>
+    </ul>
+  </div>
+</div>
+<!--<app-footer></app-footer>-->

@@ -1,0 +1,12 @@
+<div>
+  <a>
+    <input type='text' id='search' class='middle' #search (keyup)='searchProfiles(search.value)' (blur)='clearSearch()' autocomplete="off" autocorrect="off" spellcheck="false">
+    <ul class="search-result">
+      <li *ngFor="let user of users | async" >
+        <a href="/{{user.username}}" (click)='clearSearch()'>
+          {{user.username}}
+        </a>
+      </li>
+    </ul>
+  </a>
+</div>

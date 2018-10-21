@@ -1,0 +1,4 @@
+**/node_modules/
+/routes/depricated/
+private/config.js
+models/portfolioObjectModel.js

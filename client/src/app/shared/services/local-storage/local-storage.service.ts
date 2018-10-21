@@ -33,10 +33,10 @@ export class LocalStorageService {
     }
   }
 
-  /*storeUserData(user){
+  storeUserData(user){
     localStorage.setItem('user', JSON.stringify(user));
     this.user = user;
-  }*/
+  }
 
   getFullName(){
     if(!this.user){

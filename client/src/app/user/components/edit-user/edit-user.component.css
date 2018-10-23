@@ -1,12 +1,5 @@
-.formBody { display: block; width: 50%; margin: 10% auto; padding: 0; text-align: center; }
-.formContainer { position: relative; display: inline-block; margin: 0 auto; padding: 0; }
-.formContainer .greeting { margin-bottom: 50px; }
-.formContainer .greting h1, h2 { text-align: center; }
-.formContainer ul { margin: 0 auto; }
-.formContainer ul li { text-align: left; display: block; margin-bottom: 10px; }
-.formContainer ul li input[type='file'] { float: right; display: inline-block; margin: 0; padding: 0; width: 146px; }
-.formContainer ul li input[type='submit'] { margin-right: 15px; margin-top: 10px; padding: 8px; font-weight: 500; font-size: 20px; cursor: pointer; -webkit-appearance: none; border: none; border-radius: 15px; width: auto; float: right; }
-.formContainer ul li input[type='submit']:active { color: black; background: none; }
-.formContainer label { text-align: left; margin-right: 10px; }
-.formContainer .formField { display: inline-block; float: right;  width: 150px; }
-.formContainer #radio { width: 146px; }
+.data-form ul { margin: 0 auto; }
+.data-form ul li { text-align: left; display: block; margin-bottom: 10px; }
+.data-form label { text-align: left; margin-right: 10px; }
+.data-form .formField { display: inline-block; float: right;  width: 150px; }
+.data-form #radio { width: 146px; }

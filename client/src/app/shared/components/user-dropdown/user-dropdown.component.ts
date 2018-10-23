@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FlashMessagesService } from 'angular2-flash-messages';
 
@@ -12,6 +12,7 @@ import { LocalStorageService } from '../../services/local-storage/local-storage.
 })
 export class UserDropdownComponent implements OnInit {
 
+  @Input() username: string;
   constructor(
     private localStorageService:LocalStorageService,
     private flashMessage:FlashMessagesService,

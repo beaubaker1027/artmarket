@@ -1,6 +1,6 @@
 <nav>
   <a routerLink = '/' class='logo'>ArtMarket</a>
-  <a *ngIf='!localStorageService.isNotLoggedIn()' id='dropdown' class='right'><i class="fa fa-cog" style=''><app-user-dropdown></app-user-dropdown></i></a>
+  <a *ngIf='!localStorageService.isNotLoggedIn()' id='dropdown' class='right'><i class="fa fa-cog" style=''><app-user-dropdown [username]="username"></app-user-dropdown></i></a>
   <a *ngIf='!localStorageService.isNotLoggedIn()' id='cart' class='right' href='/checkout'><i class='fa fa-shopping-cart'></i> Check Out</a>
   <a *ngIf='!localStorageService.isNotLoggedIn()' id='profile' class='right' routerLink = '/{{username}}'>{{username}}</a>
   <a *ngIf='localStorageService.isNotLoggedIn()' id='register' class='right' routerLink = '/signup'>Register</a>

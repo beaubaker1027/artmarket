@@ -1,6 +1,5 @@
 .data-form ul { margin: 0 auto; }
 .data-form ul li { text-align: left; display: block; margin-bottom: 10px; }
-.data-form ul li input[type='file'] { float: right; display: inline-block; margin: 0; padding: 0; width: 146px; }
 .data-form label { text-align: left; margin-right: 10px; }
 .data-form .formField { display: inline-block; float: right;  width: 150px; }
 .data-form #radio { width: 146px; }

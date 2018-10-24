@@ -19,6 +19,6 @@ export class DashboardService {
   retrieveRandomArtists(){
     let headers = new HttpHeaders();
     headers.set('Content-Type', 'application/json');
-    return this.http.get<RandomArtistsModel>('http://localhost:3000/dashboard/randomArtists', {headers: headers})
+    return this.http.get<RandomArtistsModel>('http://localhost:3000/dashboard/randomArtists/3', {headers: headers})
   }
 }

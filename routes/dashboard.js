@@ -8,8 +8,13 @@ const jwt = require('jsonwebtoken');
 const User = require('../models/userModel');
 const config = require('../private/config');
 
-router.get('/randomArtists', (req, res, next) => {
+//find 3 random artists
+router.get('/randomArtists/:int', (req, res, next) => {
   const randomArtists = [];
+
+  console.log(req.params)
+
+  const { int } = req.params;
 
   User.find({accountType: 'Seller'}, (err, profiles)=>{
     if(err){
@@ -18,7 +23,7 @@ router.get('/randomArtists', (req, res, next) => {
         msg: err,
       });
     }
-    User.findRandom(profiles, 3)
+    User.findRandom(profiles, int)
       .then((success) => {
         return res.json(success);
       })

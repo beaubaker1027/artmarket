@@ -9,6 +9,7 @@ const User = require('../models/userModel');
 const config = require('../private/config');
 
 
+//find user info
 router.get('/find', (req, res, next) => {
 
   const { username } = req.query;
@@ -32,6 +33,8 @@ router.get('/find', (req, res, next) => {
   })
 });
 
+
+//find user profilePic
 router.get('/find/image', (req, res, next) => {
   console.log(req.query)
   const { username } = req.query;
@@ -85,6 +88,7 @@ router.get('/find/image', (req, res, next) => {
   })
 })
 
+//find all users matching parameters
 router.get('/findall', (req, res, next) => {
   const { searchTerm } = req.query;
   console.log('searchTerm: ',searchTerm.toString());

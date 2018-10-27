@@ -1,4 +1,4 @@
-footer { border-top: 1px solid lightGray; min-height: 100px; width: 1200px; background-color: #e6e6e6; color: #333333; }
+footer { border-top: 1px solid lightGray; min-height: 100px; width: 1200px; color: #333333; }
 div { margin: 10px 15px; }
 a { text-decoration: none; color: inherit; display: block; }
 @media only screen and (max-width: 1200px){

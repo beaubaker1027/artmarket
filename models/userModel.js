@@ -48,8 +48,12 @@ let userSchema = new Schema({
     type: Number,
     required: false
   },
-  artWork: {
+  artwork: {
     type: Array,
+    required: false
+  },
+  cart: {
+    type: Object,
     required: false
   },
   profilePic: {

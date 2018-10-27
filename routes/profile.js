@@ -26,7 +26,7 @@ router.get('/find', (req, res, next) => {
         phone: profile.phone || undefined,
         gender: profile.gender || undefined,
         followers: profile.followers || undefined,
-        artwork: profile.artWork || []
+        artwork: profile.artwork || []
       }
       res.json({success: true, msg:'User registered', user} );
     }

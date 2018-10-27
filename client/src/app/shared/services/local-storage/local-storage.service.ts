@@ -15,12 +15,12 @@ export class LocalStorageService {
     private router: Router
   ) { }
 
-  getUser(){
+  getUser() {
     if(!this.user){
       this.user = localStorage.getItem('user');
       this.user = JSON.parse(this.user);
     }
-    return this.user;
+    this.user;
   }
 
   getEmail(){

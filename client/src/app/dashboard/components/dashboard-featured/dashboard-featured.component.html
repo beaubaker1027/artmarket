@@ -1,5 +1,5 @@
 <flash-messages></flash-messages>
-<h1>Check Out These Featured Artists!</h1>
+<h2>Check Out These Featured Artists!</h2>
 <div class='featuredContainer' *ngIf='users'>
   <a class='imgWrapper' *ngFor='let user of users' href='/{{user.username}}'>
     <img *ngIf='user.artwork' src='data:{{user.artwork.upload.mimetype}};base64,{{user.artwork.upload.base64}}'>

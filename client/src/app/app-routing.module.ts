@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: 'signup', redirectTo: 'auth/signup', pathMatch: 'full' },
   { path: 'user', canActivate:[AuthGuard], loadChildren: './user/user.module#UserModule' },
   { path: 'auth', loadChildren: './auth/auth.module#AuthModule' },
+  { path: 'checkout', canActivate:[AuthGuard], loadChildren: './checkout/checkout.module#CheckoutModule'},
   { path: ':user', loadChildren: './profile/profile.module#ProfileModule' },
   { path: '*', redirectTo: '', pathMatch: 'full'},
 ];

@@ -4,18 +4,13 @@ const mongoose = require('mongoose');
 const fs = require('fs');
 const path = require('path');
 const bodyParser = require('body-parser');
-const session = require('express-session');
+//const session = require('express-session');
 const cors = require('cors');
 const passport = require('passport');
 
 
 //modules
 const config = require('./private/config');
-//const upload = require('./routes/upload');
-//const signup = require('./routes/signup');
-//const login = require('./routes/login');
-//const logout = require('./routes/logout');
-//const index = require('./routes/index');
 const register = require('./routes/register');
 const profile = require('./routes/profile');
 const dashboard = require('./routes/dashboard');
@@ -47,28 +42,11 @@ app.use(passport.session());
 
 require('./private/passport')(passport);
 
-/*
-//set up middleware for sessions
-app.use(
-  session({
-    secret: config.session.secret,
-    resave: true,
-    saveUninitialized: false
-  })
-);
-
-
-//routes
-app.use('/signup', signup);
-app.use('/login', login);
-app.use('/art', upload);
-app.use('/logout', logout);
-app.use('/', index);
-*/
 
 //routes
 app.use('/user', register);
 app.use('/profile', profile);
 app.use('/dashboard', dashboard);
-//listening
+
+//listener
 app.listen(config.port, () => console.log(`ArtMarket listening on port ${config.port}\n`))

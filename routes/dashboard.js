@@ -8,7 +8,7 @@ const jwt = require('jsonwebtoken');
 const User = require('../models/userModel');
 const config = require('../private/config');
 
-//find 3 random artists
+//find random artists
 router.get('/randomArtists/:int', (req, res, next) => {
   const randomArtists = [];
 

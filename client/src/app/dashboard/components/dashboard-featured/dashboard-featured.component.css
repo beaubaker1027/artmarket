@@ -1,10 +1,16 @@
-h1 { background-color: #808080; color: #f2f2f2; margin: 0; padding: 10px; }
-.featuredContainer { background-color: #bfbfbf; color: #f2f2f2; width: 100%; margin: 0px auto 15px auto; padding: 15px 0; text-align: center; }
+h2 { background-color: #e6e6e6; color: black; margin: 0; padding: 10px; }
+.featuredContainer { color: #f2f2f2; width: 100%; margin: 0px 0 15px 0; padding: 15px 0; text-align: center; }
 .imgWrapper { display: inline-block; padding: 10px; margin: 0; width: 30%; max-height: 300px; }
 .imgWrapper img { display: inline-block; padding:0; width: 100%; height: 300px; object-fit: cover; }
 .imgWrapper h3 { margin: 5px auto; }
-a { text-decoration: none; color: inherit; }
+a { text-decoration: none; color: black; }
 
+
+@media only screen and (max-width: 1200px) {
+  .featuredContainer { margin: 0 auto; }
+  .imgWrapper { display: inline-block; padding: 10px; margin: 0; width: 30%; max-height: 300px; }
+  .imgWrapper h3 { margin: 5px auto; }
+}
 
 @media only screen and (max-width: 800px) {
   .featuredContainer { margin: 0; }

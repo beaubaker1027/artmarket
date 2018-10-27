@@ -15,6 +15,7 @@ import { AuthGuard } from './guards/auth.guard';
 
 //Services
 import { LocalStorageService } from './shared/services/local-storage/local-storage.service';
+import { NavService } from './shared/components/nav/service/nav.service';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { LocalStorageService } from './shared/services/local-storage/local-stora
     LocalStorageService,
     AuthGuard,
     Title,
+    NavService,
   ],
   bootstrap: [
     AppComponent
